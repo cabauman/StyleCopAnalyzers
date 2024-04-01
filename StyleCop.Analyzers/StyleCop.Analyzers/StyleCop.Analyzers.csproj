@@ -2,9 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.1</TargetFramework>
-    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
-    <PackageTargetFallback>portable-net45+win8</PackageTargetFallback>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <PackageId>StyleCop.Analyzers.NewIdRequiredDueToNuGetBug</PackageId>
   </PropertyGroup>
 

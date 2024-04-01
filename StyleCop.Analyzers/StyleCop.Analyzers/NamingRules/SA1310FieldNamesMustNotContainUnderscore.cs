@@ -85,7 +85,10 @@ namespace StyleCop.Analyzers.NamingRules
                     continue;
                 }
 
-                switch (identifier.ValueText.IndexOf('_'))
+                var underscoreIndex = identifier.ValueText.Length <= 1
+                    ? identifier.ValueText.IndexOf('_')
+                    : identifier.ValueText.IndexOf('_', 1);
+                switch (underscoreIndex)
                 {
                 case -1:
                     // no _ character
